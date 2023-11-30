@@ -11,6 +11,7 @@ var dateDiffInDays = function (date1, date2) {
 
     return daysDifference;
 	
+	
 };
 
 // Do not change the code below.

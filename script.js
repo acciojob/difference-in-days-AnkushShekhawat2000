@@ -1,17 +1,10 @@
 var dateDiffInDays = function (date1, date2) {
-  //   write your code here
-	    const utcDate1 = Date.UTC(...parseDate(date1));
-    const utcDate2 = Date.UTC(...parseDate(date2));
+ 
+let y1 = new Date(date).getTime();
+let y2 = new Date(date2).getTime();
+	let diff =  y2 - y1;
 
-    // Calculate the difference in milliseconds between the two dates
-    const timeDifference = utcDate2 - utcDate1;
-
-    // Convert the difference to days by dividing by the number of milliseconds in a day
-    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-
-    return daysDifference;
-	
-	
+	return Math.floor(diff/(1000*60*60*24));
 };
 
 // Do not change the code below.
